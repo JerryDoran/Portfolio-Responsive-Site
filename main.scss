@@ -1,1 +1,231 @@
 @import 'config';
+
+/***************************************** HEADER SECTION **************************************/
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.top-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  top: -100vh;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+
+  .nav-list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin: 0 1.5rem;
+      transition: padding 300ms ease-in;
+
+      .nav-link {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2rem;
+        transition: all 300ms ease-in;
+      }
+
+      &:hover .nav-link {
+        color: $accent-color;
+      }
+
+      &:hover {
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  &.open {
+    top: 0;
+    border-radius: initial;
+    z-index: 500;
+  }
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 650ms ease-out;
+
+  &.open {
+    transform: rotate(-45deg);
+
+    & .bar.half.start {
+      transform: rotate(-450deg) translateX(0.7rem);
+    }
+
+    & .bar.half.end {
+      transform: rotate(-450deg) translateX(-0.7rem);
+    }
+  }
+
+  .bar {
+    background: $accent-color;
+    width: 100%;
+    height: 2px;
+    border-radius: 8px;
+
+    &.half {
+      width: 50%;
+
+      &.start {
+        transform-origin: right;
+        transition: transform 650mx cubic-bezier(0.54, -0.81, 0.57, 0.57);
+      }
+      &.end {
+        align-self: flex-end;
+        transform-origin: left;
+        transition: transform 650mx cubic-bezier(0.54, -0.81, 0.57, 0.57);
+      }
+    }
+  }
+}
+
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+
+  h1 {
+    font-size: 8rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 4rem;
+  }
+
+  h6 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+/***************************************** ABOUT SECTION **************************************/
+.about {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    // Puts both headings on top of each other
+    line-height: 0;
+
+    h1 {
+      font-size: 7rem;
+      opacity: 0.3;
+    }
+
+    h6 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+
+  .profile-img {
+    flex: 1;
+    margin-right: 5rem;
+  }
+
+  .about-details {
+    flex: 1;
+  }
+
+  .social-media {
+    margin-top: 3rem;
+
+    .nav-list {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin-right: 3rem;
+
+        i {
+          font-size: 3rem;
+          transition: color 650ms;
+        }
+
+        .fa-facebook-square:hover {
+          color: $facebook-color;
+        }
+        .fa-twitter-square:hover {
+          color: $twitter-color;
+        }
+        .fa-github-square:hover {
+          color: $github-color;
+        }
+      }
+    }
+  }
+}
+
+/**************************************** SERVICES SECTION **************************************/
+.my-skills {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 3rem -2px 2rem 0;
+    }
+
+    .icon-container {
+      width: 6rem;
+      height: 6rem;
+      border: 3px solid $accent-color;
+      background-color: #38a1f3;
+      display: flex;
+      transform: rotate(45deg);
+
+      i {
+        font-size: 3rem;
+        margin: auto;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+/**************************************** PORTFOLIO SECTION **************************************/
+.portfolio-item {
+}

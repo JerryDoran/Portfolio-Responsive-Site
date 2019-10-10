@@ -60,23 +60,25 @@
             beatae illo quaerat, voluptate magnam est officiis, recusandae
             consequuntur eligendi error laudantium quasi veniam et sunt
           </p>
-        </div>
-        <div class="social-media">
-          <ul class="nav-list">
-            <li>
-              <a href="#" class="icon-link"
-                ><i class="fab fa-facebook-square"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="icon-link"
-                ><i class="fab fa-twitter-square"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
-            </li>
-          </ul>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-link"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-link"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -137,13 +139,143 @@
           <h1>Portfolio</h1>
           <h6>View some of my recent work</h6>
         </div>
+
+        <!-- SINGLE PORTFOLIO ITEM -->
         <div class="portfolio-item">
           <div class="portfolio-img">
             <img src="/dist/images/project1.jpg" alt="" />
           </div>
+          <div class="portfolio-description">
+            <h6>Web Development</h6>
+            <h1>Blog Website</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+              tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Eveniet, tenetur.
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>
+        </div>
+
+        <!-- SINGLE PORTFOLIO ITEM -->
+        <div class="portfolio-item">
+          <div class="portfolio-description">
+            <h6>Web Design</h6>
+            <h1>Product Layout</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+              tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Eveniet, tenetur.
+            </p>
+            <div class="portfolio-img">
+              <img src="/dist/images/project2.jpg" alt="" />
+            </div>
+
+            <a href="#" class="cta">View Details</a>
+          </div>
+        </div>
+
+        <!-- SINGLE PORTFOLIO ITEM -->
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="/dist/images/project3.jpg" alt="" />
+          </div>
+          <div class="portfolio-description">
+            <h6>Web Design</h6>
+            <h1>Product Sketch</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+              tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Eveniet, tenetur.
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!----------------------------------- EXPERIENCE SECTION ---------------------------------------->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Work Experience</h1>
+          <h6>Past and current jobs</h6>
+        </div>
+        <div class="timeline">
+          <ul>
+            <li class="date" data-date="2015 - Present">
+              <h1>Google</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet, tenetur. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Eveniet, tenetur.
+              </p>
+            </li>
+            <li class="date" data-date="2012 - 2015">
+              <h1>Facebook</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet, tenetur. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Eveniet, tenetur.
+              </p>
+            </li>
+            <li class="date" data-date="2008 - 2012">
+              <h1>Microsoft</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet, tenetur. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Eveniet, tenetur.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------- CONTACT SECTION ---------------------------------------->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Contact</h1>
+          <h6>Let's work together</h6>
+        </div>
+        <form action="">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email..."
+            required
+          />
+          <label for="service">Services:</label>
+          <select name="service" id="service">
+            <option value="">Web Design</option>
+            <option value="">Web Development</option>
+            <option value="">Web Design/Development</option>
+          </select>
+          <label for="subject">Subject:</label>
+          <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </section>
+
+    <!----------------------------------- FOOTER SECTION ---------------------------------------->
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+        <p>&copy; 2019 Bilbo Baggins</p>
+      </div>
+    </footer>
 
     <!-- JQUERY CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
