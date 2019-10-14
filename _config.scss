@@ -29,6 +29,10 @@ body {
   background-size: cover;
 }
 
+section {
+  padding: 1rem;
+}
+
 a {
   text-decoration: none;
   color: $light-grey;
@@ -54,7 +58,7 @@ img {
 .section-heading {
   text-align: center;
   color: $light-grey;
-  margin-top: 8rem;
+  margin: 5rem 0;
 
   h1 {
     font-size: 3rem;
@@ -94,4 +98,8 @@ img {
     font-style: italic;
     margin-top: 0.5rem;
   }
+}
+
+.has-margin-right {
+  margin-right: 4.5rem;
 }
