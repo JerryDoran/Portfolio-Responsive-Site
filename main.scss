@@ -37,10 +37,6 @@ header {
       &:hover .nav-link {
         color: $accent-color;
       }
-
-      &:hover {
-        padding-bottom: 15px;
-      }
     }
   }
 
@@ -389,6 +385,7 @@ header {
     border-radius: 100%;
     display: flex;
     animation: pulse 2000ms infinite;
+    cursor: pointer;
 
     i {
       font-size: 1.5rem;
@@ -410,5 +407,68 @@ header {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
+}
+
+/**************************************** MEDIA QUERIES **************************************/
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('/dist/images/mobile.jpg') no-repeat center fixed;
+    background-size: cover;
+  }
+
+  .landing-text {
+    h1 {
+      font-size: 6rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 1.5rem 0 !important;
+  }
+
+  .nav-link {
+    font-size: 1.5rem !important;
+  }
+
+  .about-heading h1 {
+    font-size: 5rem !important;
+  }
+  .about-heading h6 {
+    font-size: 1.5rem !important;
+  }
+
+  .section-heading h1 {
+    font-size: 2rem !important;
+  }
+
+  .about-details .nav-list {
+    flex-direction: initial;
+  }
+
+  .about-details li {
+    margin: 0 2rem !important;
+  }
+
+  .icon-container {
+    width: 3rem !important;
+    height: 3rem !important;
+
+    i {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .timeline ul {
+    margin: 0 0 0 auto !important;
   }
 }
