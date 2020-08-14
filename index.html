@@ -21,49 +21,49 @@
   <body>
     <div class="container">
       <!-- Section One - Landing Page -->
-      <section class="section-one center">
+      <section class="section-one center" id="section-1">
         <h1 class="section-one-heading">Software Developer</h1>
         <img src="images/john-smith.jpg" alt="John Smith" class="person-img" />
         <h3 class="person-name">John Smith</h3>
-        <a href="#" class="section-one-btn">My Projects</a>
+        <a href="#section-3" class="section-one-btn">My Projects</a>
       </section>
       <!-- Navbar -->
       <nav class="navbar center">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Portfolio</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#section-1" class="nav-link">Home</a>
+        <a href="#section-2" class="nav-link">About</a>
+        <a href="#section-3" class="nav-link">Portfolio</a>
+        <a href="#section-4" class="nav-link">Contact</a>
       </nav>
       <!-- Section Two - About Me -->
-      <section class="about">
+      <section class="about" id="section-2">
         <h1 class="about-heading section-heading">About Me</h1>
         <div class="progress-bars-wrapper">
           <div class="progress-bar">
-            <p class="progress-text">HTML <span>97</span>%</p>
+            <p class="progress-text">HTML <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">CSS <span>89</span>%</p>
+            <p class="progress-text">CSS <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">Javascript <span>85</span>%</p>
+            <p class="progress-text">Javascript <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">SASS <span>87</span>%</p>
+            <p class="progress-text">SASS <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">ReactJS <span>80</span>%</p>
+            <p class="progress-text">ReactJS <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">NodeJS <span>77</span>%</p>
+            <p class="progress-text">NodeJS <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
           <div class="progress-bar">
-            <p class="progress-text">MongoDB <span>57</span>%</p>
+            <p class="progress-text">MongoDB <span></span>%</p>
             <div class="progress-percent"></div>
           </div>
         </div>
@@ -87,7 +87,7 @@
         </div>
       </section>
       <!-- Section Three - Projects -->
-      <section class="projects">
+      <section class="projects" id="section-3">
         <h1 class="projects-heading section-heading">My Projects</h1>
         <div class="projects-wrapper center">
           <div class="project">
@@ -200,6 +200,37 @@
           </div>
         </div>
       </section>
+      <!-- Section Four - Contact -->
+      <section class="contact" id="section-4">
+        <h1 class="contact-heading section-heading">Contact Me</h1>
+        <form class="contact-form center">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit" class="contact-form-btn" />
+        </form>
+      </section>
+
+      <!-- Section Five -Footer -->
+      <footer class="footer center">
+        <div class="social-media">
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#none" class="social-media-link">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+        <p class="copyright">
+          Copyright &copy; DoranSoftware. All rights reserved
+        </p>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
